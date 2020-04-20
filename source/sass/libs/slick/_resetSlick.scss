@@ -1,0 +1,104 @@
+.slick-dots li button::before {
+  color: $text-color;
+  font-size: 40px;
+  opacity: 0.8;
+}
+
+.slick-dots li.slick-active button::before {
+  color: $main-color;
+  opacity: 1;
+}
+
+.slick-next,
+.slick-prev {
+  top: auto;
+}
+
+.slick-prev {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translateY(40px) translateX(10px);
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba($text-color, 0.85);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    top: 14px;
+    right: 50%;
+    background-color: $white-color;
+    transform: translateX(50%) rotate(-45deg);
+    opacity: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    bottom: 14px;
+    left: 50%;
+    background-color: $white-color;
+    transform: translateX(-50%) rotate(45deg);
+    opacity: 1;
+  }
+}
+
+.slick-next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translateY(40px) translateX(-10px);
+  z-index: 2;
+  cursor: pointer;
+  background-color: rgba($text-color, 0.85);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    top: 14px;
+    left: 50%;
+    background-color: $white-color;
+    transform: translateX(-50%) rotate(45deg);
+    opacity: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    bottom: 14px;
+    right: 50%;
+    background-color: $white-color;
+    transform: translateX(50%) rotate(-45deg);
+    opacity: 1;
+  }
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+  background-color: rgba($text-color, 0.45);
+
+  &::before {
+    background-color: rgba($white-color, 0.85);
+  }
+
+  &::after {
+    background-color: rgba($white-color, 0.85);
+  }
+}

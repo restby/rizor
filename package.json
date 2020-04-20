@@ -1,0 +1,66 @@
+{
+  "name": "rizor",
+  "version": "1.0.0",
+  "description": "rizor-adaptive",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "browser-sync": "^2.26.7",
+    "css-declaration-sorter": "^5.1.2",
+    "del": "^5.1.0",
+    "editorconfig-cli": "^0.3.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cli": "^2.2.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "npx": "^10.2.2",
+    "posthtml-include": "^1.4.1",
+    "stylelint": "^13.2.1",
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "stylelint-order": "^4.0.0",
+    "stylelint-rational-order-plugin": "^1.0.2"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "edit": "gulp edit",
+    "start": "gulp start",
+    "svgedit": "gulp svgedit"
+  },
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/restby/rizor.git"
+  },
+  "author": "restby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/restby/rizor/issues"
+  },
+  "homepage": "https://github.com/restby/rizor#readme"
+}

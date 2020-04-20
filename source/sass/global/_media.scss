@@ -1,0 +1,17 @@
+@media (max-width: $mobile-width) {
+  .container {
+    max-width: 298px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 724px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .container {
+    max-width: 1170px;
+  }
+}

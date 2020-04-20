@@ -1,0 +1,72 @@
+body {
+  @include ma-pa-reset;
+  font-family: "RobotoLight", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: $black-color;
+  background-color: $white-color;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// .btn {
+//   padding-top: 13px;
+//   padding-bottom: 15px;
+//   padding-left: 16px;
+//   padding-right: 16px;
+//   min-height: 48px;
+//   border: none;
+//   border-radius: 24px;
+//   background-color: $active-color;
+//   font-family: "OpenSansBold", "Arial", sans-serif;
+//   font-size: 16px;
+//   line-height: 1.2;
+//   color: $white-color;
+//   font-weight: 700;
+//   letter-spacing: 0.05em;
+//   text-decoration: none;
+//   text-align: center;
+//   text-transform: uppercase;
+//   cursor: pointer;
+// }
+
+// .overlay {
+//   display: none;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba($black-color, 0.6);
+//   z-index: 1;
+// }
+
+// .section-title {
+//   margin: 0;
+//   font-family: "MullerBold", "Arial", sans-serif;
+//   font-size: 30px;
+//   line-height: 1.2;
+//   font-weight: 700;
+//   color: $section-title-color;
+//   letter-spacing: 0;
+// }
+
+// .section-lead {
+//   display: block;
+//   margin: 0;
+//   font-family: "MullerMedium", "Arial", sans-serif;
+//   font-size: 24px;
+//   line-height: 1.2;
+//   font-weight: 500;
+//   color: $heading-color;
+//   letter-spacing: 0;
+// }

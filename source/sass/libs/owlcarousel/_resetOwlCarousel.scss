@@ -1,0 +1,116 @@
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-prev span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  background-color: rgba($text-color, 0.85);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    top: 14px;
+    right: 50%;
+    background-color: $white-color;
+    transform: translateX(50%) rotate(-45deg);
+    opacity: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    bottom: 14px;
+    left: 50%;
+    background-color: $white-color;
+    transform: translateX(-50%) rotate(45deg);
+    opacity: 1;
+  }
+}
+
+.owl-next span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  background-color: rgba($text-color, 0.85);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    top: 14px;
+    left: 50%;
+    background-color: $white-color;
+    transform: translateX(-50%) rotate(45deg);
+    opacity: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    bottom: 14px;
+    right: 50%;
+    background-color: $white-color;
+    transform: translateX(50%) rotate(-45deg);
+    opacity: 1;
+  }
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: transparent;
+  color: #FFF;
+  text-decoration: none;
+
+  & span {
+    background-color: rgba($text-color, 0.45);
+
+    &::before {
+      background-color: rgba($white-color, 0.85);
+    }
+
+    &::after {
+      background-color: rgba($white-color, 0.85);
+    }
+  }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: $text-color;
+  width: 10px;
+  height: 10px;
+  opacity: 0.8;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: $main-color;
+  opacity: 1;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: $text-color;
+  opacity: 1;
+}
+
+.owl-theme .owl-dots .owl-dot.active:hover span {
+  background: $main-color;
+  opacity: 1;
+}
+
+// :not(.owl-dot.active)
