@@ -1,3 +1,4 @@
+/*stylelint-disable*/
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___
@@ -1019,7 +1020,7 @@
             .off('focus.slick blur.slick')
             .on(
                 'focus.slick',
-                '*', 
+                '*',
                 function(event) {
                     var $sf = $(this);
 
@@ -1034,7 +1035,7 @@
                 }
             ).on(
                 'blur.slick',
-                '*', 
+                '*',
                 function(event) {
                     var $sf = $(this);
 

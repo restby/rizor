@@ -1,23 +1,26 @@
 @font-face {
-  font-family: "RobotoLight";
+  font-family: "Roboto";
   src: url("../../fonts/RobotoLight.woff2") format("woff2"),
     url("../../fonts/RobotoLight.woff") format("woff");
   font-style: normal;
+  font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "RobotoBold";
+  font-family: "Roboto";
   src: url("../../fonts/RobotoBold.woff2") format("woff2"),
     url("../../fonts/RobotoBold.woff") format("woff");
   font-style: normal;
+  font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "rubikmonooneregular";
+  font-family: "rubikmonoone";
   src: url("../../fonts/rubikmonooneregular.woff2") format("woff2"),
     url("../../fonts/rubikmonooneregular.woff") format("woff");
   font-style: normal;
+  font-weight: 400;
   font-display: swap;
 }

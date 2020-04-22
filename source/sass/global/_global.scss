@@ -1,6 +1,6 @@
 body {
   @include ma-pa-reset;
-  font-family: "RobotoLight", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 300;
@@ -14,7 +14,9 @@ img {
   height: auto;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 

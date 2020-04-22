@@ -50,7 +50,7 @@
     "*.json",
     "*.js",
     "source/*.html",
-    "source/js/**/*.js",
+    "source/js/*.js",
     "source/sass/**/*.{sass,scss}"
   ],
   "repository": {

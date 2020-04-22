@@ -1,3 +1,4 @@
+/*stylelint-disable*/
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['module', 'exports'], factory);
